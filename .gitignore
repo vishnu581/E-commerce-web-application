@@ -1,0 +1,4 @@
+node_modules
+.env
+dist/
+mongodb+srv://vishnuvenugopal581_db_user:vishnuvenugopal581_db_user@cluster0.omywtwv.mongodb.net/
