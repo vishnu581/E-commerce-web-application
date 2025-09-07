@@ -1,18 +1,26 @@
 import { useState } from 'react'
 import {Link} from 'react-router-dom'
+import {registerFormControls} from "@/assets/config"
+import CommonForm from '@/componets/common/Form'
+
+ const initialState ={
+      userName: '',
+      email:'',
+      password:''
+    }
+
 
 const AuthRegister = () => {
    
-    const initialState ={
-      userName: '',emalil:'',password:''
-    }
-
-    function AuthRegister(){
-      const [formData,setFormData] = useState(initialState)
+   
+     const [formData,setFormData] = useState(initialState)
       function onSubmit(){
 
       }
-    }
+    
+
+    
+     
 
 
   return (
@@ -24,12 +32,13 @@ const AuthRegister = () => {
         
 
       </div>
-      <commonForm formControls={registerFromControls}/>
+      <CommonForm 
+      formControls={registerFormControls}
       buttonText={'Sign UP'}
       formData={formData}
       setFormData={setFormData}
       onSubmit={onSubmit}
-
+       />
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Navigate, useLocation } from 'react-router-dom'
 
+
 const CheckAuth = ({isAuthenticated , user ,children}) => {
  
     const location = useLocation()
@@ -40,7 +41,7 @@ const CheckAuth = ({isAuthenticated , user ,children}) => {
         return <>{children}</>
 
 
-    return()
+    
 }
 
 export default CheckAuth
